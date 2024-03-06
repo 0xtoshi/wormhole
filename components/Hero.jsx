@@ -130,7 +130,7 @@ export default () => {
                 }));
 
                 //console.log(;
-                setEligibleAddress(elig + 1);
+                setEligibleAddress((...elig) => Number(elig) + 1);
 
                 setAmountEligible(
                   Math.floor((tokenAmount += Number(result.data.amount / 1e9)))
