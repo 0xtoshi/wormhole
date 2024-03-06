@@ -129,7 +129,7 @@ export default () => {
                 }));
 
                 //console.log(;
-                setEligibleAddress(i + 1);
+                setEligibleAddress((eligibleAddress += i));
                 setAmountEligible(
                   Math.floor((tokenAmount += Number(result.data.amount / 1e9)))
                 );
@@ -287,7 +287,7 @@ export default () => {
               >
                 {eligibleAddress}
               </Chip>
-              | Total Token Amount : {amountEligible}
+              | Total Token Amount
               <Chip
                 className="capitalize"
                 color="success"
