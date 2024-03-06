@@ -94,7 +94,6 @@ export default () => {
       console.log(address);
       if (address.length > 0) {
         setCountCheck(address.length);
-        let eligibleAddress = 0;
         let tokenAmount = 0;
         for (let i = 0; i < address.length; i++) {
           //  console.log(Math.floor(i / countCheck) * 100);
@@ -129,7 +128,7 @@ export default () => {
                 }));
 
                 //console.log(;
-                setEligibleAddress((eligibleAddress += i));
+                setEligibleAddress((eligibleAddress += 1));
                 setAmountEligible(
                   Math.floor((tokenAmount += Number(result.data.amount / 1e9)))
                 );
