@@ -1,0 +1,27 @@
+{
+  "name": "starknet-provisions",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.2.9",
+    "axios": "^1.6.7",
+    "framer-motion": "^11.0.5",
+    "next": "14.1.0",
+    "next-themes": "^0.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}
