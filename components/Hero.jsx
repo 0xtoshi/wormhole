@@ -95,7 +95,6 @@ export default () => {
       if (address.length > 0) {
         setCountCheck(address.length);
         let tokenAmount = 0;
-        let elig = eligibleAddress;
         for (let i = 0; i < address.length; i++) {
           //  console.log(Math.floor(i / countCheck) * 100);
 
@@ -105,6 +104,7 @@ export default () => {
               console.log(data.data);
               let result = data.data;
               if (data.data.status === 200) {
+                let elig = eligibleAddress;
                 setResult((previousInputs) => ({
                   ...previousInputs,
                   response: [
