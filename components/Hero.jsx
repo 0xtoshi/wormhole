@@ -128,7 +128,11 @@ export default () => {
                 }));
 
                 //console.log(;
-                setEligibleAddress((eligibleAddress += 1));
+                setEligibleAddress((previousInputs) => ({
+                  ...previousInputs,
+                  ...(previousInputs + 1),
+                }));
+
                 setAmountEligible(
                   Math.floor((tokenAmount += Number(result.data.amount / 1e9)))
                 );
