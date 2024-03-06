@@ -88,6 +88,7 @@ export default () => {
       ...previousInputs,
       response: [],
     }));
+    setEligibleAddress(0);
     try {
       let address = addressList.split("\n");
 
