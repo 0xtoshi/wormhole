@@ -28,7 +28,7 @@ export default () => {
   };
 
   const [countCheck, setCountCheck] = useState(0);
-  const [eligibleAddress, setEligibleAddress] = useState(0);
+  let [eligibleAddress, setEligibleAddress] = useState(0);
   const [amountEligible, setAmountEligible] = useState(0);
 
   useEffect(() => {
